@@ -1,0 +1,8 @@
+[user]
+        name = Will Shuttleworth
+        email = willshuttleworth@ymail.com
+[init]
+        defaultBranch = main
+[core]
+        editor = vim
+        excludesfile = /Users/willshuttleworth/.gitignore_global
