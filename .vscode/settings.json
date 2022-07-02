@@ -1,0 +1,5 @@
+{
+    "editor.quickSuggestionsDelay": 50,
+    "scm.autoReveal": false,
+    "git.autoRepositoryDetection": false
+}
