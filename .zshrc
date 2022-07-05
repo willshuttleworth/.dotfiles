@@ -7,3 +7,10 @@ neofetch
 # aliases
 alias myip="curl http://ipecho.net/plain; echo"
 alias gpom="git push origin main"
+
+
+# functions
+fucntion mvt(){
+	mv ./$1 ~/.Trash
+}
+
