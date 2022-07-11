@@ -11,6 +11,9 @@ alias gpom="git push origin main"
 
 # functions
 fucntion mvt(){
-	mv ./$1 ~/.Trash
+    for file in "$@"
+    do 
+        mv ./$file ~/.Trash
+    done
 }
 
