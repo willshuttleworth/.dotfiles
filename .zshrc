@@ -2,7 +2,7 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
 }
 COLOR_DEF='%f'
-COLOR_USR='%F{243}'
+COLOR_USR='%F{cyan}'
 COLOR_DIR='%F{197}'
 COLOR_GIT='%F{39}'
 NEWLINE=$'\n'
