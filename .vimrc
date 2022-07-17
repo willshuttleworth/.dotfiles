@@ -1,3 +1,6 @@
+"turning line numbers on (idk maybe do that relative thing in future)"
+set number
+
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
