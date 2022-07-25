@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
-let g:netrw_dirhist_6='/Users/willshuttleworth/Desktop/review_notes'
-let g:netrw_dirhist_5='/Users/willshuttleworth/Desktop'
-let g:netrw_dirhist_4='/Users/willshuttleworth/Desktop/year1'
-let g:netrw_dirhist_3='/Users/willshuttleworth/Desktop'
-let g:netrw_dirhist_2='/Users/willshuttleworth/.vim'
-let g:netrw_dirhist_1='/Users/willshuttleworth/.vscode'
