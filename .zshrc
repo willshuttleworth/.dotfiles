@@ -24,4 +24,5 @@ fucntion mvt(){
         mv ./$file ~/.Trash
     done
 }
-
+# color setting
+TERM=xterm-256color

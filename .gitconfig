@@ -2,7 +2,7 @@
         name = Will Shuttleworth
         email = 93229335+willshuttleworth@users.noreply.github.com
 [init]
-        defaultBranch = main
+        defaultBranch = master
 [core]
         editor = vim
         excludesfile = /Users/willshuttleworth/.gitignore_global

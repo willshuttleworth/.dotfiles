@@ -1,6 +1,3 @@
-"turning line numbers on (idk maybe do that relative thing in future)"
-set number
-
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
@@ -58,3 +55,11 @@ set history=1000
 
 " set cursor to blinking line
 let &t_EI = "\e[5 q"
+
+" set hybrid line numbers
+set number
+set relativenumber
+
+" enable custom colorscheme
+colorscheme molokai
+set t_Co=256
