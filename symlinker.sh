@@ -3,7 +3,7 @@
 # make symlinks between files in this directory and ones in home directory
 
 files=(".zshrc" ".vimrc" ".gitconfig" ".gitignore_global" "Brewfile")
-dirs=("") 
+dirs=(".vim") 
 if [ ! -d $dir ]; then    
     mkdir ~/.old_dotfiles
 fi
