@@ -22,6 +22,9 @@ set tabstop=8
 " Use space characters instead of tabs.
 set expandtab
 
+" remove whitespace faster i guess
+set softtabstop=8
+
 " Do not save backup files.
 set nobackup
 
@@ -51,7 +54,7 @@ set showmatch
 set hlsearch
 
 " Set the commands to save in history default number is 20.
-set history=1000
+set history=100
 
 " set cursor to blinking line
 let &t_EI = "\e[5 q"
