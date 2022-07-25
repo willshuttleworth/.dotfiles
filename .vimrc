@@ -19,8 +19,8 @@ syntax on
 " Set shift width to 4 spaces.
 set shiftwidth=4
 
-" Set tab width to 4 columns.
-set tabstop=4
+" Set tab width to 8 columns.
+set tabstop=8
 
 " Use space characters instead of tabs.
 set expandtab
@@ -55,3 +55,6 @@ set hlsearch
 
 " Set the commands to save in history default number is 20.
 set history=1000
+
+" set cursor to blinking line
+let &t_EI = "\e[5 q"
