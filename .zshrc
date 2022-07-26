@@ -15,15 +15,27 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # aliases
 alias myip="curl http://ipecho.net/plain; echo"
-alias gpom="git push origin main"
+# alias gpom="git push origin main"
 
 # functions
-fucntion mvt() {
-    for file in "$@"
-    do 
-        mv ./$file ~/.Trash
+mvt() {
+    for file in "$@"; do; 
+    mv ./$file ~/.Trash
     done
 }
+
+gpom() {
+    BRANCH=$(parse_git_branch)
+
+    if [ $BRANCH = "[main]" ]; then
+        git push origin main
+    elif [ $BRANCH = "[master]" ]; then
+        git push origin master
+    else
+        echo "not on master or main branch"
+    fi
+}
+
 # color setting
 TERM=xterm-256color
 
