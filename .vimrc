@@ -17,13 +17,13 @@ syntax on
 set shiftwidth=4
 
 " Set tab width to 8 columns.
-set tabstop=8
+set tabstop=4
 
 " Use space characters instead of tabs.
 set expandtab
 
 " remove whitespace faster i guess
-set softtabstop=8
+set softtabstop=4
 
 " Do not save backup files.
 set nobackup
