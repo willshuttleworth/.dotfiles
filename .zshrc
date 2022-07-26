@@ -11,11 +11,11 @@ COLOR_GIT='%F{39}'
 # prompt
 setopt PROMPT_SUBST
 export PROMPT='${COLOR_USR}%n@%M ${COLOR_DIR}%1~ ${COLOR_GIT}$(parse_git_branch) ${COLOR_DEF}%% '
+# idk python multiprocess thing
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # aliases
 alias myip="curl http://ipecho.net/plain; echo"
-# alias gpom="git push origin main"
 
 # functions
 mvt() {
