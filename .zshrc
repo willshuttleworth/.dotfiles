@@ -29,8 +29,10 @@ gpom() {
     BRANCH=$(parse_git_branch)
 
     if [ $BRANCH = "[main]" ]; then
+        echo "pushing to branch $BRANCH"        
         git push origin main
     elif [ $BRANCH = "[master]" ]; then
+        echo "pushing to branch $BRANCH"        
         git push origin master
     else
         echo "not on master or main branch"
