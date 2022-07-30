@@ -1,3 +1,6 @@
+" map jj to esc when in insert mode
+imap jj <Esc>
+
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
