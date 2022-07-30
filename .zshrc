@@ -1,8 +1,3 @@
-# function to retrieve git branch for prompt
-parse_git_branch() {
-    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
-}
-
 # colors for prompt
 COLOR_DEF='%f'
 COLOR_USR='%F{cyan}'
@@ -19,13 +14,21 @@ alias myip="curl http://ipecho.net/plain; echo"
 alias sleep="pmset sleepnow" 
 alias shutdown="sudo shutdown -h now"
 
-# functions
+# FUNCTIONS
+
+# function to retrieve git branch for prompt
+parse_git_branch() {
+    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+}
+
+# mv files to trash
 mvt() {
     for file in "$@"; do; 
     mv ./$file ~/.Trash
     done
 }
 
+# git push origin master/main 
 gpom() {
     BRANCH=$(parse_git_branch)
 
