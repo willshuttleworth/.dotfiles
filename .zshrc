@@ -16,6 +16,7 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # aliases
 alias myip="curl http://ipecho.net/plain; echo"
+alias sleep="pmset sleepnow" 
 
 # functions
 mvt() {
