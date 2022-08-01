@@ -69,3 +69,7 @@ set relativenumber
 " enable custom colorscheme
 colorscheme molokai
 set t_Co=256
+
+" plugins
+" ctrlp fuzzy finder
+set runtimepath^=~/.vim/bundle/ctrlp.vim
