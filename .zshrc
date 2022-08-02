@@ -46,5 +46,8 @@ gpom() {
 # color setting
 TERM=xterm-256color
 
+# use vim keys to edit in terminal
+set -o vi
+
 # commands to run at startup
 neofetch
