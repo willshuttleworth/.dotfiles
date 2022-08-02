@@ -1,17 +1,17 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-# GitHub command-line tool
+brew "asciiquarium"
+brew "cmatrix"
+brew "cowsay"
+brew "figlet"
 brew "gh"
-# Fast, highly customisable system info script
 brew "neofetch"
-# Platform built on V8 to build network applications
+brew "neovim"
 brew "node"
-# Interpreted, interactive, object-oriented programming language
+brew "onefetch"
 brew "python@3.9"
-# Extraction utility for .zip compressed archives
+brew "smartmontools"
+brew "tty-clock"
 brew "unzip"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
-# Open-source code editor
 cask "visual-studio-code"
