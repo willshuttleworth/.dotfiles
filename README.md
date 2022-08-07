@@ -11,3 +11,4 @@ backing up my dotfiles on github
     * use `brew bundle` to install everything from brewfile
     * use `brew bundle dump --force` to update existing brewfile
     * side note: `brew update && brew upgrade` is used to first sync local repo with remotes and then brew upgrade changes install software to match updated local repos 
+* find ways to save/autoinstall programs installed with other package managers (ruby gems, rust crates, etc)
