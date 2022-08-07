@@ -11,7 +11,7 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # aliases
 alias myip="curl http://ipecho.net/plain; echo"
-alias sleep="pmset sleepnow" 
+alias slp="pmset sleepnow" 
 alias shutdown="sudo shutdown -h now"
 
 # FUNCTIONS
