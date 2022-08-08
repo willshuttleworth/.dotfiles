@@ -13,6 +13,7 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 alias myip="curl http://ipecho.net/plain; echo"
 alias slp="pmset sleepnow" 
 alias shutdown="sudo shutdown -h now"
+alias reboot="sudo reboot"
 
 # FUNCTIONS
 
@@ -40,6 +41,20 @@ gpom() {
         git push origin master
     else
         echo "not on master or main branch"
+    fi
+}
+
+# compile c/c++ source code
+# if test.cpp exists but only test is passed to function, $1 still equals test.cpp
+function compile() {
+    C="$1.c"
+    CPP="$1.cpp"
+    if [ -f $C ]; then
+        gcc $C -o $1
+    elif [ -f $CPP ]; then
+        g++ $CPP -o $1
+    else
+        echo "no file named $C or $CPP exists"
     fi
 }
 
