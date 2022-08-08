@@ -6,6 +6,7 @@ COLOR_GIT='%F{39}'
 # prompt
 setopt PROMPT_SUBST
 export PROMPT='${COLOR_USR}%n@%M ${COLOR_DIR}%1~ ${COLOR_GIT}$(parse_git_branch) ${COLOR_DEF}%% '
+
 # idk python multiprocess thing
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
@@ -45,7 +46,6 @@ gpom() {
 }
 
 # compile c/c++ source code
-# if test.cpp exists but only test is passed to function, $1 still equals test.cpp
 function compile() {
     C="$1.c"
     CPP="$1.cpp"
