@@ -1,3 +1,6 @@
+" html boilerplate
+autocmd BufNewFile *.html 0r ~/.vim/skeletons/page.html
+
 " map jj to esc when in insert mode
 imap jj <Esc>
 
