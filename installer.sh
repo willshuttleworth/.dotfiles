@@ -1,6 +1,8 @@
 #!/bin/zsh
 
 # make symlinks between files in this directory and ones in home directory
+# install homebrew packages
+# assumptions: homebrew and xcode cli things are already installed
 
 files=(".zshrc" ".vimrc" ".gitconfig" ".gitignore_global" "Brewfile")
 dirs=(".vim") 
@@ -35,3 +37,6 @@ for file in ${files[@]}; do
     echo "symlinking $file"
     ln -s ~/.dotfiles/$file ~/$file
 done    
+
+#installing homebrew packages
+brew bundle
