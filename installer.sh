@@ -1,9 +1,13 @@
 #!/bin/zsh
 
+# install homebrew
 # make symlinks between files in this directory and ones in home directory
 # install homebrew packages
-# assumptions: homebrew and xcode cli things are already installed
 
+#install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# make symlinks
 files=(".zshrc" ".vimrc" ".gitconfig" ".gitignore_global" "Brewfile")
 dirs=(".vim") 
 
