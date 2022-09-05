@@ -4,7 +4,7 @@ backing up my dotfiles on github
 
 ### usage
 
-1. install xcode cli (it has git)
+1. install xcode cli: `xcode-select --install`
 2. `git clone https://github.com/willshuttleworth/.dotfiles ~`
 3. run installation script to install homebrew and its packages 
 
