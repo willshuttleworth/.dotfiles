@@ -49,14 +49,17 @@ gpom() {
 
 # compile c/c++ source code
 function compile() {
-    C="$1.c"
-    CPP="$1.cpp"
-    if [ -f $C ]; then
-        gcc $C -o $1
-    elif [ -f $CPP ]; then
-        g++ $CPP -o $1
+    FILE=$1
+    EXT=$(echo $FILE | cut -d'.' -f 2)
+    TARGET=$(echo $FILE | cut -d'.' -f 1)
+    echo $EXT
+    echo $TARGET
+    if [[ -f $FILE ]] && [[ $EXT == "c" ]]; then
+        gcc $FILE -o $TARGET
+    elif [[ -f $FILE ]] && [[ $EXT == "cpp" ]]; then
+        g++ $FILE -o $TARGET
     else
-        echo "no file named $C or $CPP exists"
+        echo "no file named $file exists"
     fi
 }
 
