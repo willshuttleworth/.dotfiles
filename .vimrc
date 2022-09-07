@@ -1,5 +1,14 @@
-" html boilerplate
-autocmd BufNewFile *.html 0r ~/.vim/skeletons/page.html
+" Set shift width to 4 spaces.
+set shiftwidth=4
+
+" Set tab width to 8 columns.
+set tabstop=4
+
+" Use space characters instead of tabs.
+set expandtab
+
+" remove whitespace faster i guess
+set softtabstop=4
 
 " map jj to esc when in insert mode
 imap jj <Esc>
@@ -19,17 +28,6 @@ filetype indent on
 " Turn syntax highlighting on.
 syntax on
 
-" Set shift width to 4 spaces.
-set shiftwidth=4
-
-" Set tab width to 8 columns.
-set tabstop=4
-
-" Use space characters instead of tabs.
-set expandtab
-
-" remove whitespace faster i guess
-set softtabstop=4
 
 " Do not save backup files.
 set nobackup
@@ -72,6 +70,9 @@ set relativenumber
 " enable custom colorscheme
 colorscheme molokai
 set t_Co=256
+
+" html boilerplate
+autocmd BufNewFile *.html 0r ~/.vim/skeletons/page.html
 
 " plugins
 " ctrlp fuzzy finder
