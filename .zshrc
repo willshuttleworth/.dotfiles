@@ -15,6 +15,8 @@ alias myip="curl http://ipecho.net/plain; echo"
 alias slp="pmset sleepnow" 
 alias shutdown="sudo shutdown -h now"
 alias reboot="sudo reboot"
+alias python="python3"
+alias pip="pip3"
 
 # FUNCTIONS
 
