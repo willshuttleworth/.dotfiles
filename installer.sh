@@ -42,5 +42,5 @@ for file in ${files[@]}; do
     ln -s ~/.dotfiles/$file ~/$file
 done    
 
-#installing homebrew packages
+#installing homebrew packages (assuming that Brewfile exists in home directory)
 brew bundle
