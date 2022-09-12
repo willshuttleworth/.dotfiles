@@ -44,3 +44,6 @@ done
 
 #installing homebrew packages (assuming that Brewfile exists in home directory)
 brew bundle
+
+# using macos defaults to restore old settings
+defaults write com.apple.dock "tilesize" -int "50" && killall Dock
