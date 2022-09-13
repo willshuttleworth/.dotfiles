@@ -10,6 +10,10 @@ export PROMPT='${COLOR_USR}%n@%M ${COLOR_DIR}%1~ ${COLOR_GIT}$(parse_git_branch)
 # idk python multiprocess thing
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
+# java stuff
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
 # aliases
 alias myip="curl http://ipecho.net/plain; echo"
 alias slp="pmset sleepnow" 
