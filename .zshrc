@@ -21,6 +21,7 @@ alias shutdown="sudo shutdown -h now"
 alias reboot="sudo reboot"
 alias python="python3"
 alias pip="pip3"
+alias update="brew update && brew upgrade"
 
 # FUNCTIONS
 
@@ -56,8 +57,6 @@ function compile() {
     FILE=$1
     EXT=$(echo $FILE | cut -d'.' -f 2)
     TARGET=$(echo $FILE | cut -d'.' -f 1)
-    echo $EXT
-    echo $TARGET
     if [[ -f $FILE ]] && [[ $EXT == "c" ]]; then
         gcc $FILE -o $TARGET
     elif [[ -f $FILE ]] && [[ $EXT == "cpp" ]]; then
