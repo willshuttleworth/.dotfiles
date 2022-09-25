@@ -73,4 +73,4 @@ TERM=xterm-256color
 set -o vi
 
 # commands to run at startup
-neofetch
+macchina
