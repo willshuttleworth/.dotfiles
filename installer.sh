@@ -4,7 +4,7 @@
 # make symlinks between files in this directory and ones in home directory
 # install homebrew packages
 
-#install homebrew
+# install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # make symlinks
@@ -42,7 +42,7 @@ for file in ${files[@]}; do
     ln -s ~/.dotfiles/$file ~/$file
 done    
 
-#installing homebrew packages (assuming that Brewfile exists in home directory)
+# installing homebrew packages (assuming that Brewfile exists in home directory)
 brew bundle
 
 # using macos defaults to restore old settings
