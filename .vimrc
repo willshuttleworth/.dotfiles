@@ -1,3 +1,6 @@
+" This unsets the "last search pattern" register by hitting return
+nnoremap <CR> :noh<CR><CR>
+
 " Set shift width to 4 spaces.
 set shiftwidth=4
 
