@@ -23,6 +23,7 @@ alias python="python3"
 alias pip="pip3"
 alias update="brew update && brew upgrade"
 alias pitt-unix="ssh wps20@unixs.cssd.pitt.edu -c 3des-cbc -oKexAlgorithms=+diffie-hellman-group1-sha1"
+alias c="clear" # im really bad at spelling clear
 
 # FUNCTIONS
 
