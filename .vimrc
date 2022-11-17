@@ -14,7 +14,9 @@ set expandtab
 set softtabstop=4
 
 " map jj to esc when in insert mode
-imap jj <Esc>
+" imap jj <Esc>
+" i am a changed man. i will use ctrl-c for exiting insert mode. (ok not
+" actually ctrl-c since capslock is mapped to ctrl but same idea
 
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
