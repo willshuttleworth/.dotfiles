@@ -1,6 +1,7 @@
 ## my personal dotfiles
 
 backing up my dotfiles on github
+these are my ones for macos. will probably be creating a linux one soon.
 
 ### usage
 
