@@ -80,5 +80,6 @@ set t_Co=256
 autocmd BufNewFile *.html 0r ~/.vim/skeletons/page.html
 
 " plugins
-" ctrlp fuzzy finder
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+call plug#begin()
+Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+call plug#end()
