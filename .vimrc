@@ -76,8 +76,9 @@ set relativenumber
 colorscheme molokai
 set t_Co=256
 
-" html boilerplate
+" templates
 autocmd BufNewFile *.html 0r ~/.vim/skeletons/page.html
+autocmd BufNewFile *.java 0r ~/.vim/skeletons/template.java
 
 " plugins
 call plug#begin()
