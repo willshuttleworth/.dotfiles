@@ -83,3 +83,6 @@ autocmd BufNewFile *.html 0r ~/.vim/skeletons/page.html
 call plug#begin()
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
 call plug#end()
+" plugin settings
+" turning off instant update for vim markdown
+let g:instant_markdown_slow = 1
