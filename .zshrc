@@ -53,6 +53,7 @@ alias reboot="sudo reboot"
 alias update="brew update && brew upgrade"
 alias thoth="ssh wps20@thoth.cs.pitt.edu"
 alias c="clear" # im really bad at spelling clear
+alias gdb="aarch64-elf-gdb"
 
 # FUNCTIONS
 
