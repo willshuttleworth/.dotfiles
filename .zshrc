@@ -54,7 +54,7 @@ alias update="brew update && brew upgrade"
 alias thoth="ssh wps20@thoth.cs.pitt.edu"
 alias c="clear" # im really bad at spelling clear
 alias gdb="aarch64-elf-gdb"
-alias refresh_trial="mvt ~/Library/Application\ Support/.ffuserdata" # unlimited final cut pro trial fuck you apple
+alias refresh-trial="mvt ~/Library/Application\ Support/.ffuserdata" # unlimited final cut pro trial fuck you apple
 
 # FUNCTIONS
 
