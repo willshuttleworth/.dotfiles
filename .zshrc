@@ -85,20 +85,6 @@ gpom() {
     fi
 }
 
-# compile c/c++ source code
-function compile() {
-    FILE=$1
-    EXT=$(echo $FILE | cut -d'.' -f 2)
-    TARGET=$(echo $FILE | cut -d'.' -f 1)
-    if [[ -f $FILE ]] && [[ $EXT == "c" ]]; then
-        gcc $FILE -o $TARGET
-    elif [[ -f $FILE ]] && [[ $EXT == "cpp" ]]; then
-        g++ $FILE -o $TARGET
-    else
-        echo "no file named $file exists"
-    fi
-}
-
 # color setting
 TERM=xterm-256color
 
