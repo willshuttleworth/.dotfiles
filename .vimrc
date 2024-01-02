@@ -1,6 +1,12 @@
 " This unsets the "last search pattern" register by hitting return
 nnoremap <CR> :noh<CR><CR>
 
+" rebind netrw
+nnoremap <space>pv :Ex<CR>
+
+" fzf bind
+nnoremap <C-f> :Files<space>
+
 " Set shift width to 4 spaces.
 set shiftwidth=4
 
@@ -13,13 +19,10 @@ set expandtab
 " remove whitespace faster i guess
 set softtabstop=4
 
-" map jj to esc when in insert mode
-" imap jj <Esc>
-" i am a changed man. i will use ctrl-c for exiting insert mode. (ok not
-" actually ctrl-c since capslock is mapped to ctrl but same idea
-
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
+
+set backspace=indent,eol,start
 
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
@@ -32,7 +35,6 @@ filetype indent on
 
 " Turn syntax highlighting on.
 syntax on
-
 
 " Do not save backup files.
 set nobackup
@@ -82,8 +84,26 @@ autocmd BufNewFile *.java 0r ~/.vim/skeletons/template.java
 
 " plugins
 call plug#begin()
-Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+    Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    Plug 'xavierd/clang_complete'
+    Plug 'vim-scripts/AutoComplPop'
 call plug#end()
 " plugin settings
 " turning off instant update for vim markdown
 let g:instant_markdown_slow = 1
+
+"autcomplete options
+set complete+=kspell
+set completeopt=menuone,preview
+set shortmess+=c
+
+" provide path directly to the library file
+let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
+set omnifunc=syntaxcomplete#Complete
+
+" use spell dictionary for autocomplete with ctrl-p
+set spell
+highlight clear SpellBad
+highlight clear SpellCap
