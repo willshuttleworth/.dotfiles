@@ -92,7 +92,13 @@ call plug#begin()
 call plug#end()
 " plugin settings
 " turning off instant update for vim markdown
+let g:instant_markdown_autostart = 0
 let g:instant_markdown_slow = 1
+let g:instant_markdown_theme = 'dark'
+let g_instant_markdown_open_to_the_world = 1
+" mapping to start up instant markdown node server
+nnoremap <C-i> :InstantMarkdownPreview<CR>
+nnoremap <C-e> :InstantMarkdownStop<CR>
 
 "autcomplete options
 set complete+=kspell
