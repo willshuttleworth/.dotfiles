@@ -45,6 +45,9 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
+# google cloud cli
+export PATH="/Users/willshuttleworth/google-cloud-sdk/bin/:$PATH"
+
 # aliases
 alias myip="curl http://ipecho.net/plain; echo"
 alias slp="pmset sleepnow" 
@@ -93,3 +96,9 @@ set -o vi
 
 # commands to run on startup
 cd ~/Desktop
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/willshuttleworth/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/willshuttleworth/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/willshuttleworth/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/willshuttleworth/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
