@@ -102,3 +102,5 @@ if [ -f '/Users/willshuttleworth/Downloads/google-cloud-sdk/path.zsh.inc' ]; the
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/willshuttleworth/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/willshuttleworth/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/opt/homebrew/opt/jpeg/bin:$PATH"
+export PATH="/Users/willshuttleworth/Library/Caches/Homebrew/Backup/include:$PATH"

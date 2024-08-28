@@ -7,6 +7,9 @@ nnoremap <space>pv :Ex<CR>
 " fzf bind
 nnoremap <C-f> :Files<space>
 
+" fix for instant markdown
+set shell=bash\ -i
+
 " Set shift width to 4 spaces.
 set shiftwidth=4
 
@@ -95,7 +98,7 @@ call plug#end()
 let g:instant_markdown_autostart = 0
 let g:instant_markdown_slow = 1
 let g:instant_markdown_theme = 'dark'
-let g_instant_markdown_open_to_the_world = 1
+
 " mapping to start up instant markdown node server
 nnoremap <C-i> :InstantMarkdownPreview<CR>
 nnoremap <C-e> :InstantMarkdownStop<CR>
