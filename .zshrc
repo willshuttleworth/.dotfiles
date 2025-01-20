@@ -94,9 +94,6 @@ TERM=xterm-256color
 # use vim keys to edit in terminal
 set -o vi
 
-# commands to run on startup
-cd ~/Desktop
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/willshuttleworth/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/willshuttleworth/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
