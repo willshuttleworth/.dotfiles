@@ -1,12 +1,3 @@
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'christoomey/vim-tmux-navigator'
-call vundle#end()            " required
-filetype plugin indent on    " required
-
 " This unsets the "last search pattern" register by hitting return
 nnoremap <CR> :noh<CR><CR>
 
@@ -14,7 +5,7 @@ nnoremap <CR> :noh<CR><CR>
 nnoremap <space>pv :Ex<CR>
 
 " fzf bind
-nnoremap <C-f> :Files<space>
+nnoremap <C-f> :Files<space><CR>
 
 " fix for instant markdown
 set shell=bash\ -i
@@ -101,6 +92,7 @@ call plug#begin()
     Plug 'junegunn/fzf.vim'
     Plug 'xavierd/clang_complete'
     Plug 'vim-scripts/AutoComplPop'
+    Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 " plugin settings
 " turning off instant update for vim markdown

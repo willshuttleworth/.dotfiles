@@ -8,7 +8,7 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # make symlinks
-files=(".zshrc" ".vimrc" ".gitconfig" ".gitignore_global" "Brewfile")
+files=(".zshrc" ".vimrc" ".gitconfig" ".gitignore_global" "Brewfile" ".tmux.conf")
 dirs=(".vim") 
 
 cd; echo "moving to home directory"
@@ -42,8 +42,25 @@ for file in ${files[@]}; do
     ln -s ~/.dotfiles/$file ~/$file
 done    
 
+
 # installing homebrew packages (assuming that Brewfile exists in home directory)
 brew bundle
+
+# tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# install tmux plugins
+~/.tmux/plugins/tpm/bin/install_plugins 
+
+# vim plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# install vim plugins
+vim -S ~/.vim/setup.vim +qall
+
+# install things managed outside homebrew
+# rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # using macos defaults to restore old settings
 # dock size
