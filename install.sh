@@ -61,17 +61,3 @@ vim -S ~/.vim/setup.vim +qall
 # install things managed outside homebrew
 # rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-# using macos defaults to restore old settings
-# dock size
-defaults write com.apple.dock "tilesize" -int "50" && killall Dock
-# deck autohiding
-defaults write com.apple.dock "autohide" -bool "true" && killall Dock
-# show hidden files in finder
-defaults write com.apple.finder "AppleShowAllFiles" -bool "true" && killall Finder
-# show pathbar in finder
-defaults write com.apple.finder "ShowPathbar" -bool "true" && killall Finder
-# show files in list view in finder
-defaults write com.apple.finder "FXPreferredViewStyle" -string "Nlsv" && killall Finder
-# no warning for changing file extension
-defaults write com.apple.finder "FXEnableExtensionChangeWarning" -bool "false" && killall Finder
