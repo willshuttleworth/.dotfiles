@@ -1,8 +1,11 @@
+" set leader key
+let mapleader = " "
+
 " This unsets the "last search pattern" register by hitting return
 nnoremap <CR> :noh<CR><CR>
 
 " rebind netrw
-nnoremap <space>pv :Ex<CR>
+nnoremap <leader>pv :Ex<CR>
 
 " fzf bind
 nnoremap <C-f> :Files<space><CR>
@@ -90,10 +93,12 @@ call plug#begin()
     Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
-    Plug 'xavierd/clang_complete'
     Plug 'vim-scripts/AutoComplPop'
     Plug 'christoomey/vim-tmux-navigator'
+    Plug 'prabirshrestha/vim-lsp'
+    Plug 'mattn/vim-lsp-settings'
 call plug#end()
+
 " plugin settings
 " turning off instant update for vim markdown
 let g:instant_markdown_autostart = 0
@@ -109,11 +114,24 @@ set complete+=kspell
 set completeopt=menuone,preview
 set shortmess+=c
 
-" provide path directly to the library file
-let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
-set omnifunc=syntaxcomplete#Complete
-
 " use spell dictionary for autocomplete with ctrl-p
 set spell
 highlight clear SpellBad
 highlight clear SpellCap
+
+" lsp config
+function! s:on_lsp_buffer_enabled() abort
+    setlocal omnifunc=lsp#complete
+    nmap <buffer> gd <plug>(lsp-definition)
+    nmap <buffer> gr <plug>(lsp-references)
+    nmap <buffer> <leader>rn <plug>(lsp-rename)
+    nmap <buffer> K <plug>(lsp-hover)
+endfunction
+
+augroup lsp_install
+    au!
+    " call s:on_lsp_buffer_enabled only for languages that has the server registered.
+    autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+augroup END
+" disable diagnostics support
+let g:lsp_diagnostics_enabled = 0         
