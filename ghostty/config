@@ -1,1 +1,2 @@
-/Users/willshuttleworth/.config/ghostty/config
+theme = Monokai Soda
+font-feature = -calt, -liga, -dlig

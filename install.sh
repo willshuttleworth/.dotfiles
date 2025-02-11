@@ -9,7 +9,7 @@
 
 # make symlinks
 files=(".zshrc" ".vimrc" ".gitconfig" ".gitignore_global" "Brewfile" ".tmux.conf")
-dirs=(".vim") 
+dirs=(".vim" "ghostty") 
 
 cd; echo "moving to home directory"
 
