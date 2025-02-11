@@ -1,6 +1,9 @@
 " set leader key
 let mapleader = " "
 
+" go to previous buffer with C-p
+nnoremap <C-p> <C-6>
+
 " This unsets the "last search pattern" register by hitting return
 nnoremap <CR> :noh<CR><CR>
 
