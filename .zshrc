@@ -26,6 +26,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+DISABLE_UPDATE_PROMPT=true
 source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -39,16 +40,6 @@ COLOR_GIT='%F{39}'
 # prompt
 setopt PROMPT_SUBST
 export PROMPT='${COLOR_USR}%n@%M ${COLOR_DIR}%1~ ${COLOR_GIT}$(parse_git_branch) ${COLOR_DEF}%% '
-
-# idk python multiprocess thing
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-
-# java stuff
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
-# google cloud cli
-export PATH="/Users/willshuttleworth/google-cloud-sdk/bin/:$PATH"
 
 # aliases
 alias myip="curl http://ipecho.net/plain; echo"
@@ -92,14 +83,3 @@ gpom() {
 
 # color setting
 TERM=xterm-256color
-
-# use vim keys to edit in terminal
-set -o vi
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/willshuttleworth/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/willshuttleworth/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/willshuttleworth/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/willshuttleworth/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-export PATH="/opt/homebrew/opt/jpeg/bin:$PATH"
-export PATH="/Users/willshuttleworth/Library/Caches/Homebrew/Backup/include:$PATH"
