@@ -1,12 +1,16 @@
 theme = Monokai Soda
 font-feature = -calt, -liga, -dlig
 
+# create panes
+keybind = performable:ctrl+/=new_split:right
+keybind = performable:ctrl+-=new_split:down
+
 # vim binds to navigate panes
 keybind = performable:cmd+h=goto_split:left
 keybind = performable:cmd+j=goto_split:down
 keybind = performable:cmd+k=goto_split:up
 keybind = performable:cmd+l=goto_split:right
 
-# scroll
-keybind = performable:ctrl+d=scroll_page_down
-keybind = performable:ctrl+u=scroll_page_up
+# scroll (how to do a sensible binding for this while keeping ctrl u/d for vim?)
+keybind = performable:cmd+d=scroll_page_down
+keybind = performable:cmd+u=scroll_page_up
