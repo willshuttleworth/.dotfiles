@@ -1,2 +1,12 @@
 theme = Monokai Soda
 font-feature = -calt, -liga, -dlig
+
+# vim binds to navigate panes
+keybind = performable:cmd+h=goto_split:left
+keybind = performable:cmd+j=goto_split:down
+keybind = performable:cmd+k=goto_split:up
+keybind = performable:cmd+l=goto_split:right
+
+# scroll
+keybind = performable:ctrl+d=scroll_page_down
+keybind = performable:ctrl+u=scroll_page_up
