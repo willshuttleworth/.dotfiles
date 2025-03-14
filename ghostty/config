@@ -1,5 +1,6 @@
 theme = Monokai Soda
 font-feature = -calt, -liga, -dlig
+window-new-tab-position = end
 
 # create panes
 keybind = performable:ctrl+/=new_split:right
