@@ -15,3 +15,6 @@ keybind = performable:cmd+l=goto_split:right
 # scroll (how to do a sensible binding for this while keeping ctrl u/d for vim?)
 keybind = performable:cmd+d=scroll_page_down
 keybind = performable:cmd+u=scroll_page_up
+
+# disable unfocused splits fading out
+unfocused-split-opacity = 1
