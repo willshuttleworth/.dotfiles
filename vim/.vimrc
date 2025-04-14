@@ -111,7 +111,7 @@ let g:instant_markdown_theme = 'dark'
 
 " mapping to start up instant markdown node server
 nnoremap <C-i> :InstantMarkdownPreview<CR>
-nnoremap <C-e> :InstantMarkdownStop<CR>
+" no bind for :InstantMarkdownStop currently
 
 "autcomplete options
 set complete+=kspell
