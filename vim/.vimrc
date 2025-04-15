@@ -1,6 +1,9 @@
 " set leader key
 let mapleader = " "
 
+" disable sign column nonsense from lsp
+set signcolumn=no
+
 " go to previous buffer with C-p
 nnoremap <C-p> <C-6>
 
