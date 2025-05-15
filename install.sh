@@ -5,7 +5,7 @@
 
 brew install stow
 
-dirs=("vim" "ghostty" "git" "brew" "zsh" "aerospace")
+dirs=("vim" "ghostty" "git" "brew" "zsh" "aerospace" "helix")
 
 for dir in ${dirs[@]}; do
     if [ -d $dir ]; then    

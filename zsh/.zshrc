@@ -39,7 +39,6 @@ COLOR_DIR='%F{197}'
 COLOR_GIT='%F{39}'
 # prompt
 setopt PROMPT_SUBST
-export PROMPT='${COLOR_USR}%n@%M ${COLOR_DIR}%1~ ${COLOR_GIT}$(parse_git_branch) ${COLOR_DEF}%% '
 
 # aliases
 alias myip="curl http://ipecho.net/plain; echo"
@@ -51,6 +50,7 @@ alias thoth="ssh wps20@thoth.cs.pitt.edu"
 alias c="clear" # im really bad at spelling clear
 alias gdb="aarch64-elf-gdb"
 alias refresh-trial="mvt ~/Library/Application\ Support/.ffuserdata" # unlimited final cut pro trial fuck you apple
+export PATH="~/.cargo/bin/coreutils:$PATH"
 
 # FUNCTIONS
 
@@ -83,3 +83,4 @@ gpom() {
 
 # color setting
 TERM=xterm-256color
+

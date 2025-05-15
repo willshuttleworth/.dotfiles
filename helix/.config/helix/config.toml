@@ -1,0 +1,11 @@
+theme = "monokai_soda"
+
+[editor]
+line-number = "relative"
+mouse = false
+
+[keys.insert]
+"C-c" = "normal_mode"
+
+[keys.select]
+"C-c" = "normal_mode"
